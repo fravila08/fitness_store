@@ -1,0 +1,112 @@
+body{
+    color: white;
+    background-color: rgb(62, 62, 62);
+}
+.display{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height:75vh;
+    width: 100%;
+    margin: 0;
+}
+
+.product{
+    height: 35vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.pic img{
+    height: 15vh;
+    width: 20vw;
+}
+
+.welcometocart{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    color: black;
+    height: 65vh;
+    width: 80vw;
+    overflow: auto;
+}
+
+
+.cart_itemholder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 2vw;
+}    
+
+.cart_itemholder img{
+    height: 10vh;
+    width: 25vw;
+}
+
+.welcometocart hr{
+    margin: 0;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.srch{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 2px 4px;
+}
+
+#cp{
+    width: 5vw;
+}
+
+.imgdis{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.imgpic{
+    width: 25vw;
+}
+
+.home{
+    width: 10vw;
+    border-radius: 10px;
+}
+
+.home a{
+    text-decoration: none;
+    color: black;
+}

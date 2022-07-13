@@ -1,0 +1,12 @@
+{% extends 'ecom_app/base.html' %}
+{% load static%}
+{% block content%}
+<div class="welcome">
+    <div class="srch">
+        <img src="{{img}}">
+    </div>
+    <h1>Unfortunately this item is no longer available in stock.</h1> 
+    <button class='home'><a href="{% url 'home'%}"> Go Home</a></button>
+</div>
+
+{% endblock %}

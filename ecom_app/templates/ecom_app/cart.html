@@ -1,0 +1,20 @@
+{% extends 'ecom_app/base.html' %}
+{% load static %}
+{% block content%}
+<div class='welcometocart'>
+    <h1 style='margin-left: 10px;'>Total Cost: ${{total|floatformat:2}}</h1>
+    <hr> 
+    {%for item in supply%}    
+    <div class='cart_itemholder'>
+        <img src="{{item.img_url}}">
+        <h1>{{item.title}}</h1>
+        <h5>${{item.price|floatformat:2}}
+        <button onclick='remove({{item.id}})'>Remove</button>
+    </div>
+    <hr>
+    {% endfor %}
+</div>
+{% endblock %}
+{% block script%}
+<script src="{% static 'js/cart.js' %}"></script>
+{% endblock %}

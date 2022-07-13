@@ -1,0 +1,18 @@
+{% extends 'ecom_app/base.html' %}
+{% load static %}
+{% block content%}
+<div class='welcome'>
+    <h2>We are here to help you!</h2>
+    <p>Welcome to our fitness store. Here you will find everything you need to start your fitness journey once and for all.
+    Simply<br> purchase one of our programs and any equipment you think may be necessary and within a couple of days you'll have your own fitness journey to pursue!<br>
+    Many of our students have found these products as their perfect aid to stay in shape after their military service.<br>
+     No more pointless endless walks/runs that will only hurt your body. Just a nice motivated program to bring you to your full potential!<br>
+    We already placed our most popular item in your  <a href="{% url 'cart'%}"><em>cart</em></a> don't worry this one is on the house but feel free to remove it if needed.</p>
+    <div class='imgdis'>
+    {% for link in img %}
+    <img class='imgpic' src="{{link}}">
+    {% endfor %}
+</div>
+</div>
+
+{% endblock %}
