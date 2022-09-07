@@ -1,7 +1,7 @@
 function addToCart(n){
     axios.post('fitness',{
         item: n
-    }).then((response)=>{
-        window.location.href='fitness'
-    })
+    }).then(
+        window.location.href='/cart'
+    )
 }

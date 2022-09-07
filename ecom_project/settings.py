@@ -23,10 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-oo-%eko)fk(ypmswl#sxb95aat-v&kf4vxuzk5-q7_(9y5z%)9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ["https://cpfitstore.com"]
+  
+CSRF_TRUSTED_ORIGINS=["https://cpfitstore.com"]
 
 # Application definition
 
