@@ -12,67 +12,67 @@ import os
 #This builds the database for products to access in each individual template
 #This will provide the complimentary program to the cart
 load_dotenv()
-bodybuilding=Cart.objects.get_or_create(
-    img_url='https://cdn.sanity.io/images/dm4o0ui7/production/ab8622774dfd8bc6b2107656cc1d648ff48279b3-1200x600.png?w=900&h=450&auto=format',
-    title='Body Building',
-    price=0
-    )
-# The following creates fitness programs
-bodybuilding=Fitness.objects.get_or_create(
-    img_url='https://cdn.sanity.io/images/dm4o0ui7/production/ab8622774dfd8bc6b2107656cc1d648ff48279b3-1200x600.png?w=900&h=450&auto=format',
-    title='Body Building',
-    price=250.50
-    )
+# bodybuilding=Cart.objects.get_or_create(
+#     img_url='https://cdn.sanity.io/images/dm4o0ui7/production/ab8622774dfd8bc6b2107656cc1d648ff48279b3-1200x600.png?w=900&h=450&auto=format',
+#     title='Body Building',
+#     price=0
+#     )
+# # The following creates fitness programs
+# bodybuilding=Fitness.objects.get_or_create(
+#     img_url='https://cdn.sanity.io/images/dm4o0ui7/production/ab8622774dfd8bc6b2107656cc1d648ff48279b3-1200x600.png?w=900&h=450&auto=format',
+#     title='Body Building',
+#     price=250.50
+#     )
 
-Calisthenics=Fitness.objects.get_or_create(
-    img_url='https://www.greatestphysiques.com/wp-content/uploads/2016/11/Hannibal-for-king-Calisthenics-1.jpg',
-    title='Calisthenics',
-    price=122.5
-)
+# Calisthenics=Fitness.objects.get_or_create(
+#     img_url='https://www.greatestphysiques.com/wp-content/uploads/2016/11/Hannibal-for-king-Calisthenics-1.jpg',
+#     title='Calisthenics',
+#     price=122.5
+# )
 
-Cardiovascular=Fitness.objects.get_or_create(
-    img_url='https://www.outsideonline.com/wp-content/uploads/2020/10/13/russell-dinkins-track_h.jpg?width=1200',
-    title='Cardiovascular',
-    price=75.75
-)
+# Cardiovascular=Fitness.objects.get_or_create(
+#     img_url='https://www.outsideonline.com/wp-content/uploads/2020/10/13/russell-dinkins-track_h.jpg?width=1200',
+#     title='Cardiovascular',
+#     price=75.75
+# )
 
-# The following creates barbells
-olympic_bar=Barbells.objects.get_or_create(
-    img_url='https://www.garage-gyms.com/wp-content/uploads/2013/12/olympic-barbell-bandr-rogue.jpg',
-    title='Olympic Barbell',
-    price=122.5
-)
+# # The following creates barbells
+# olympic_bar=Barbells.objects.get_or_create(
+#     img_url='https://www.garage-gyms.com/wp-content/uploads/2013/12/olympic-barbell-bandr-rogue.jpg',
+#     title='Olympic Barbell',
+#     price=122.5
+# )
 
-hex_bar=Barbells.objects.get_or_create(
-    img_url='https://cdn.shopify.com/s/files/1/0471/3879/9774/products/O7HB_main_1035x@2x.jpg?v=1636408675%202x',
-    title='Hex Bar',
-    price=130.75
-)
+# hex_bar=Barbells.objects.get_or_create(
+#     img_url='https://cdn.shopify.com/s/files/1/0471/3879/9774/products/O7HB_main_1035x@2x.jpg?v=1636408675%202x',
+#     title='Hex Bar',
+#     price=130.75
+# )
 
-multigrip_bar=Barbells.objects.get_or_create(
-    img_url='https://garagegymlab.com/wp-content/uploads/2021/02/SFB010-1.jpg',
-    title='Multigrip Bar',
-    price=177.5
-)
+# multigrip_bar=Barbells.objects.get_or_create(
+#     img_url='https://garagegymlab.com/wp-content/uploads/2021/02/SFB010-1.jpg',
+#     title='Multigrip Bar',
+#     price=177.5
+# )
 
-# The following creates fitness programs
-individual_dumbbell=Dumbbells.objects.get_or_create(
-    img_url='https://www.technogym.com/wpress/wp-content/uploads/2019/04/Technogym-hexagonal-dumbbells_fb-1.jpg',
-    title='Individual Dumbbells',
-    price=77.5
-)
+# # The following creates fitness programs
+# individual_dumbbell=Dumbbells.objects.get_or_create(
+#     img_url='https://www.technogym.com/wpress/wp-content/uploads/2019/04/Technogym-hexagonal-dumbbells_fb-1.jpg',
+#     title='Individual Dumbbells',
+#     price=77.5
+# )
 
-adjustuble_dumbbells=Dumbbells.objects.get_or_create(
-    img_url='http://mobileimages.lowes.com/productimages/0c24b23c-b9eb-4a62-a325-8faba2974e20/46594320.jpg',
-    title='Adjustuble Dumbbells Pro',
-    price=277.5
-)
+# adjustuble_dumbbells=Dumbbells.objects.get_or_create(
+#     img_url='http://mobileimages.lowes.com/productimages/0c24b23c-b9eb-4a62-a325-8faba2974e20/46594320.jpg',
+#     title='Adjustuble Dumbbells Pro',
+#     price=277.5
+# )
 
-adjustuble_dumbbells_ecom=Dumbbells.objects.get_or_create(
-    img_url='https://cdn.shopify.com/s/files/1/0575/5401/0306/t/15/assets/acf.Adjustable-Dumbbell-Pair-Main.png?v=1635535324',
-    title='Adjustuble Dumbbells',
-    price=153.89
-)
+# adjustuble_dumbbells_ecom=Dumbbells.objects.get_or_create(
+#     img_url='https://cdn.shopify.com/s/files/1/0575/5401/0306/t/15/assets/acf.Adjustable-Dumbbell-Pair-Main.png?v=1635535324',
+#     title='Adjustuble Dumbbells',
+#     price=153.89
+# )
 
 # Create your views here.
 def home(request):
