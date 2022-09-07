@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-oo-%eko)fk(ypmswl#sxb95aat-v&kf4vxuzk5-q7_(9y5z%)9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["https://cpfitstore.com"]
+ALLOWED_HOSTS = ["*"]
   
 CSRF_TRUSTED_ORIGINS=["https://cpfitstore.com"]
 
@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'ecom_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ecomapp',
+        'NAME': 'ecom_app',
     }
 }
 

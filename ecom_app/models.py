@@ -1,9 +1,7 @@
-from operator import mod
+
 from django.db import models
-from django.utils import timezone
 # Create your models here.
 class Cart(models.Model):
-    created_at=models.DateTimeField(default=timezone.now())
     img_url=models.CharField(max_length=500)
     title=models.CharField(max_length=250)
     price=models.FloatField(default=0)
