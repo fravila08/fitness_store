@@ -79,7 +79,7 @@
 
     {
         "model":"ecom_app.Dumbbells",
-        "pk":1,
+        "pk":2,
         "fields":{
             "img_url":"http://mobileimages.lowes.com/productimages/0c24b23c-b9eb-4a62-a325-8faba2974e20/46594320.jpg",
             "title":"Adjustuble Dumbbells Pro",
